@@ -13,9 +13,9 @@ See https://github.com/pbatey/flask-staticdirs/ for more information.
 import os
 from glob import glob
 from flask import Blueprint, redirect, request, send_from_directory, abort
-from flask.helpers import safe_join
+from werkzeug.security import safe_join
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 def staticdirs(static_folder='static', index='index.html', files=[]):
   """Creates a Flask blueprint to serve files and directories (with support for index files) from at static folder.

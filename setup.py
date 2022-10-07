@@ -1,5 +1,6 @@
 import pathlib
 from setuptools import setup
+from flask_staticdirs import __version__
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -10,7 +11,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="flask-staticdirs",
-    version="1.0.0",
+    version=__version__,
     description="Creates a Flask blueprint to serve files and directories (with support for index files) from at static folder.",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -25,6 +26,6 @@ setup(
     ],
     packages=["flask_staticdirs"],
     include_package_data=True,
-    install_requires=["flask"],
+    install_requires=["flask>=2.1.0"],
     #entry_points={},
 )
