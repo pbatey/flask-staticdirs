@@ -11,7 +11,7 @@ This is for reference only. Most of this is captured in the _Makefile_. See [Dev
 
 ## Install Tools
 
-    pip install twine bumpversion wheel
+    pip install twine bump2version wheel
 
 ## Bump the version
 
