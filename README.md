@@ -66,3 +66,7 @@ Creates a Flask blueprint to serve files and directories (with support for index
 - **param index**: File or list of files (first found) to serve for a directory. Defaults to 'index.html'.
 - **param files**: An array of filename globs. Files and directories that match will be routed specifically to avoid conflict with other routes.
 - **returns**: A flask blueprint. Use with ``app.register_blueprint()``
+
+## Releases
+- v1.0.0 Initial Version
+- v1.0.1 Works with Flask 2.1.0
